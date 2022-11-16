@@ -3,16 +3,16 @@ backend:
   phases:
     build:
        commands:
-#         - ORIG=$(pwd)
-#         - cd ~
-#         - git clone https://x-access-token:${PAT}@github.com/Narrator/amplify-cli.git --depth 1
-#         - cd amplify-cli
-#         - yarn setup-dev
-#         - cd $ORIG
-#         - AMPLIFY_CLI_DISABLE_LOGGING=false $(yarn global bin)/amplify-dev pull --amplify "{\"envName\":\"mainline\",\"appId\":\"d2rbmxb53dikct\"}" --providers "{\"awscloudformation\":{\"configLevel\":\"project\",\"useProfile\":true,\"profileName\":\"default\"}}" --no-override --no-codegen --yes
-#         - AMPLIFY_CLI_DISABLE_LOGGING=false $(yarn global bin)/amplify-dev init --amplify "{\"envName\":\"mainline\",\"appId\":\"d2rbmxb53dikct\"}" --providers "{\"awscloudformation\":{\"configLevel\":\"project\",\"useProfile\":true,\"profileName\":\"default\"}}" --codegen "{\"generateCode\":false,\"generateDocs\":false}" --yes --forcePush || true
-#         - cat ~/.amplify/logs-dev/*
-          - amplifyPush --simple
+        - ORIG=$(pwd)
+        - cd ~
+        - git clone https://x-access-token:${PAT}@github.com/Narrator/amplify-cli.git --depth 1
+        - cd amplify-cli
+        - yarn setup-dev
+        - cd $ORIG
+        - AMPLIFY_CLI_DISABLE_LOGGING=false $(yarn global bin)/amplify-dev pull --amplify "{\"envName\":\"mainline\",\"appId\":\"d2rbmxb53dikct\"}" --providers "{\"awscloudformation\":{\"configLevel\":\"project\",\"useProfile\":true,\"profileName\":\"default\"}}" --no-override --no-codegen --yes
+        - AMPLIFY_CLI_DISABLE_LOGGING=false $(yarn global bin)/amplify-dev init --amplify "{\"envName\":\"mainline\",\"appId\":\"d2rbmxb53dikct\"}" --providers "{\"awscloudformation\":{\"configLevel\":\"project\",\"useProfile\":true,\"profileName\":\"default\"}}" --codegen "{\"generateCode\":false,\"generateDocs\":false}" --yes --forcePush || true
+        - cat ~/.amplify/logs-dev/*
+          # - amplifyPush --simple
 frontend:
   phases:
     build:
