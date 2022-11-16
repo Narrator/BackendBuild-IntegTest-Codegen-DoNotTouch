@@ -5,7 +5,7 @@ backend:
       commands:
         - ORIG=$(pwd)
         - cd ~
-        - git clone https://x-access-token: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@github.com/Narrator/amplify-cli.git --depth 1
+        - git clone https://x-access-token:${PAT}@github.com/Narrator/amplify-cli.git --depth 1
         - cd amplify-cli
         - yarn setup-dev
         - cd $ORIG
