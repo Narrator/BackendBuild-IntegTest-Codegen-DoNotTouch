@@ -2,7 +2,7 @@ version: 1
 backend:
   phases:
     build:
-#       commands:
+       commands:
 #         - ORIG=$(pwd)
 #         - cd ~
 #         - git clone https://x-access-token:${PAT}@github.com/Narrator/amplify-cli.git --depth 1
