@@ -3,7 +3,7 @@ backend:
   phases:
     preBuild:
       commands:
-        - npm install -g @aws-amplify/cli@5.6
+        # - npm install -g @aws-amplify/cli@5.6
     build:
       commands:
         - amplifyPush --simple
