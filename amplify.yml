@@ -7,7 +7,6 @@ backend:
         - nvm use 14
     build:
       commands:
-        - mv ./amplify/.config/_project-config.json ./amplify/.config/project-config.json
         - amplifyPush --simple
 frontend:
   phases:
